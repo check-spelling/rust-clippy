@@ -93,7 +93,7 @@ pub fn contains_ty_adt_constructor_opaque<'tcx>(cx: &LateContext<'tcx>, ty: Ty<'
                     for &(predicate, _span) in cx.tcx.explicit_item_bounds(def_id) {
                         match predicate.kind().skip_binder() {
                             // For `impl Trait<U>`, it will register a predicate of `T: Trait<U>`, so we go through
-                            // and check substituions to find `U`.
+                            // and check substitutions to find `U`.
                             ty::PredicateKind::Clause(ty::Clause::Trait(trait_predicate)) => {
                                 if trait_predicate
                                     .trait_ref
