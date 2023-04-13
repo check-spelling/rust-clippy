@@ -23,7 +23,7 @@ fn main() {
 }
 
 fn binary_heap_retain() {
-    // NOTE: Do not lint now, because binary_heap_retain is nighyly API.
+    // NOTE: Do not lint now, because binary_heap_retain is nightly API.
     // And we need to add a test case for msrv if we update this implementation.
     // https://github.com/rust-lang/rust/issues/71503
     let mut heap = BinaryHeap::from([1, 2, 3]);
