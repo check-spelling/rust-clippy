@@ -1101,7 +1101,7 @@ pub fn make_projection<'tcx>(
 ///
 /// This function is for associated types which are "known" to be valid with the given
 /// substitutions, and as such, will only return `None` when debug assertions are disabled in order
-/// to prevent ICE's. With debug assertions enabled this will check that that type normalization
+/// to prevent ICE's. With debug assertions enabled this will check that type normalization
 /// succeeds as well as everything checked by `make_projection`.
 pub fn make_normalized_projection<'tcx>(
     tcx: TyCtxt<'tcx>,
