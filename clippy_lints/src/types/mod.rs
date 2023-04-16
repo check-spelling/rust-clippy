@@ -90,7 +90,7 @@ declare_clippy_lint! {
     ///
     /// ### Why is this bad?
     /// `Option<_>` represents an optional value. `Option<Option<_>>`
-    /// represents an optional optional value which is logically the same thing as an optional
+    /// represents an optional value which is logically the same thing as an optional
     /// value but has an unneeded extra level of wrapping.
     ///
     /// If you have a case where `Some(Some(_))`, `Some(None)` and `None` are distinct cases,

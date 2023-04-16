@@ -2234,7 +2234,7 @@ pub fn is_slice_of_primitives(cx: &LateContext<'_>, expr: &Expr<'_>) -> Option<S
 }
 
 /// returns list of all pairs (a, b) from `exprs` such that `eq(a, b)`
-/// `hash` must be comformed with `eq`
+/// `hash` must be verified with `eq`
 pub fn search_same<T, Hash, Eq>(exprs: &[T], hash: Hash, eq: Eq) -> Vec<(&T, &T)>
 where
     Hash: Fn(&T) -> u64,
